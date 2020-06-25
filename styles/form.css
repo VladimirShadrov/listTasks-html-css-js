@@ -1,0 +1,65 @@
+.create-task {
+  padding: 20px 0;
+}
+
+.create-task-container {
+  max-width: 1150px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.create-task-form {
+  max-width: 600px;
+  border: 1px solid rgba(85, 85, 85, 0.5);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0 auto;
+  padding: 10px 0;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.create-task-form h2 {
+  text-align: center;
+  color: rgba(105, 105, 105, 1);
+  margin: 10px 0;
+}
+
+.create-task-form-wrapper {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.create-task-form-wrapper input {
+  display: block;
+  height: 35px;
+  margin: 15px 0;
+  padding: 0 7px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.create-task-name,
+.create-task-description {
+  width: 100%;
+}
+
+.create-task-submit {
+  width: 30%;
+  color: #fff;
+  background-color: #007bff;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0px 2px 10px 1px rgba(22, 23, 24, 0.7);
+  transition: 0.2s;
+}
+
+.create-task-submit:active {
+  box-shadow: none;
+}
+
+@media all and (max-width: 500px) {
+  .create-task-submit {
+    width: 50%;
+  }
+}

@@ -90,7 +90,7 @@
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-@media all and (max-width: 395px) {
+@media all and (max-width: 500px) {
   .navigation-container {
     justify-content: center;
     align-items: center;

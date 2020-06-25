@@ -1,4 +1,6 @@
 @import url("header.css");
+@import url("form.css");
+@import url("tasks.css");
 
 * {
   margin: 0;

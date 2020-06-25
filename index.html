@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -9,27 +9,63 @@
 </head>
 
 <body>
-<nav class="navigation">
-  <div class="navigation-container">
-    <span class="navigation-title">Навигация</span>
-    <div class="navigation-dropdown">
-      <div class="navigation-dropdown-menu">
-        <span class="navigation-dropdown-text">Выберите тему</span>
-        <div class="navigation-dropdown-list">
-          <p class="navigation-dropdown-item">Тема по умолчанию</p>
-          <p class="navigation-dropdown-item">Темная тема</p>
-          <p class="navigation-dropdown-item">Светлая тема</p>
+
+  <!-- Блок Header -->
+  <nav class="navigation">
+    <div class="navigation-container">
+      <span class="navigation-title">Выберите тему</span>
+      <div class="navigation-dropdown">
+        <div class="navigation-dropdown-menu">
+          <span class="navigation-dropdown-text">Тема по умолчанию</span>
+          <div class="navigation-dropdown-list">
+            <p class="navigation-dropdown-item">Тема по умолчанию</p>
+            <p class="navigation-dropdown-item">Темная тема</p>
+            <p class="navigation-dropdown-item">Светлая тема</p>
+          </div>
         </div>
+        <div class="navigation-dropdown-arrow">&#9650;</div>
       </div>
-      <div class="navigation-dropdown-arrow">&#9650;</div>
     </div>
-  </div>
-</nav>
+  </nav>
+  <!-- / Блок Header -->
+
+  <!-- Блок ввода задачи -->
+
+  <section class="create-task">
+    <div class="create-task-container">
+      <form action="#" class="create-task-form">
+        <div class="create-task-form-wrapper">
+          <h2>Создайте новую задачу</h2>
+          <input class="create-task-name field" type="text" name="name-task" placeholder="Введите название задачи" >
+          <input class="create-task-description field" type="text" name="task-description"
+            placeholder="Введите описание задачи" >
+          <input class="create-task-submit" type="submit" value="Создать задачу">
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- / Блок ввода задачи -->
+
+  <!-- Блок отображения созданных задач -->
+
+  <section class="task-list">
+    <div class="task-list-container">
+      <div class="task-list-wrapper">
+        <p class="task-list-default-value">Задач пока не назначено</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- / Блок отображения созданных задач -->
 
 
 
-<script src="js/index.js"></script>
-<script src="js/header.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/formValidation.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/tasks.js"></script>
 </body>
 
 </html>
