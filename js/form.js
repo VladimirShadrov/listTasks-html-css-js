@@ -11,15 +11,10 @@ form.addEventListener('submit', function (event) {
     }
 
     fields.forEach(field => clearInput(field));
-    taskParent.innerHTML = '';
-    addNewTask(newTask)
+    putTaskToLS(newTask)
   };
 });
 
-function addNewTask(data) {
-  tasks.push(data);
-  renderNewTask();
-};
 
 
 

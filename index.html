@@ -36,9 +36,9 @@
       <form action="#" class="create-task-form">
         <div class="create-task-form-wrapper">
           <h2>Создайте новую задачу</h2>
-          <input class="create-task-name field" type="text" name="name-task" placeholder="Введите название задачи" >
+          <input class="create-task-name field" type="text" name="name-task" placeholder="Введите название задачи">
           <input class="create-task-description field" type="text" name="task-description"
-            placeholder="Введите описание задачи" >
+            placeholder="Введите описание задачи">
           <input class="create-task-submit" type="submit" value="Создать задачу">
         </div>
       </form>
@@ -51,13 +51,26 @@
 
   <section class="task-list">
     <div class="task-list-container">
-      <div class="task-list-wrapper">
-        <p class="task-list-default-value">Задач пока не назначено</p>
-      </div>
+      <div class="task-list-wrapper"></div>
     </div>
   </section>
 
   <!-- / Блок отображения созданных задач -->
+
+  <!-- Модальное окно -->
+  <div class="modal">
+    <div class="modal-dialog">
+      <div class="modal-dialog-wrapper">
+        <h3 class="modal-task-title">Вы уверены, что хотите изменить задачу:</h3>
+        <p class="modal-task-description">"Название задачи"?</p>
+        <div class="task-list-buttons">
+          <button class="change-task">Уверен</button>
+          <button class="delete-task">Отмена</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
 
 
 
@@ -66,6 +79,7 @@
   <script src="js/formValidation.js"></script>
   <script src="js/form.js"></script>
   <script src="js/tasks.js"></script>
+  <script src="js/deleteTask.js"></script>
 </body>
 
 </html>

@@ -1,6 +1,7 @@
 @import url("header.css");
 @import url("form.css");
 @import url("tasks.css");
+@import url("modal.css");
 
 * {
   margin: 0;
@@ -13,3 +14,6 @@ body {
   background-color: lightgrey;
 }
 
+input, button, textarea {
+  outline: none;
+}

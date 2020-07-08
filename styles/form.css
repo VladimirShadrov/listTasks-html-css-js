@@ -1,5 +1,5 @@
 .create-task {
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .create-task-container {
@@ -45,7 +45,8 @@
 }
 
 .create-task-submit {
-  width: 30%;
+  width: 150px;
+  height: 40px;
   color: #fff;
   background-color: #007bff;
   cursor: pointer;
@@ -58,8 +59,3 @@
   box-shadow: none;
 }
 
-@media all and (max-width: 500px) {
-  .create-task-submit {
-    width: 50%;
-  }
-}
