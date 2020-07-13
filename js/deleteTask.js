@@ -5,6 +5,9 @@ taskListContainer.addEventListener('click', function (event) {
   if (event.target.classList.contains('delete-task')) {
     deleteTaskFromLS(id);
     deleteTaskFromHTML(parent);
+
+    let dataFromLS = localStorage.getItem('tasksCatalog');
+    insertDefaultText(dataFromLS);
   };
 });
 
@@ -12,8 +15,13 @@ function deleteTaskFromHTML(el) {
   el.remove();
 };
 
-function deleteTaskFromLS(id) {
+function getArrayTasksFromLS() {
   let tasks = JSON.parse(localStorage.getItem('tasksCatalog'));
+  return tasks;
+};
+
+function deleteTaskFromLS(id) {
+  let tasks = getArrayTasksFromLS();
   let task = tasks.find(task => task.id === +id);
   let index = tasks.indexOf(task);
   tasks.splice(index, 1);

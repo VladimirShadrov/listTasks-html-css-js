@@ -37,7 +37,6 @@
   align-items: center;
   width: 85%;
   position: relative;
-  z-index: 10;
 }
 
 .navigation-dropdown-text {
@@ -69,12 +68,12 @@
 }
 
 .navigation-dropdown-list {
-  opacity: 0;
-  top: -110px;
+  transform: scaleY(0);
+  top: -10px;
 }
 
 .navigation-dropdown-list.active {
-  opacity: 1;
+  transform: scaleY(1);
   top: 35px;
 }
 
@@ -84,6 +83,12 @@
   cursor: pointer;
   display: flex;
   align-items: center;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.navigation-dropdown-list.active .navigation-dropdown-item {
+  opacity: 1;
 }
 
 

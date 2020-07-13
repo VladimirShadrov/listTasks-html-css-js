@@ -1,3 +1,8 @@
+
+if (localStorage.getItem('tasksCatalog') === null || localStorage.getItem('tasksCatalog') === []) {
+  renderDefaultText();
+};
+
 function renderNewTask(tasksList) {
   tasksList.forEach(task => {
     const html = `
@@ -23,7 +28,7 @@ function insertDefaultText(arr) {
   if (!arr.length) {
     renderDefaultText();
   }
-}
+};
 
 function clearTaskListContainer() {
   taskListContainer.innerHTML = '';
@@ -31,9 +36,9 @@ function clearTaskListContainer() {
 
 
 function getTaskFromLS() {
-  const tasksFromLS = localStorage.getItem('tasksCatalog');
-
+  let tasksFromLS = localStorage.getItem('tasksCatalog');
   if (tasksFromLS !== null) {
+
     tasks = JSON.parse(tasksFromLS);
     insertDefaultText(tasks);
     renderNewTask(tasks);
@@ -41,7 +46,7 @@ function getTaskFromLS() {
   }
 
   return [];
-}
+};
 
 getTaskFromLS()
 

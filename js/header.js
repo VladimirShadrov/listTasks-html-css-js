@@ -5,19 +5,19 @@ dropdown.addEventListener('click', function(event) {
 })
 
 function openMenu() {
-  dropdownList.classList.add('active')
+  dropdownList.classList.add('active');
   dropdownArrow.style.transform = 'rotate(180deg)';
 }
 
 function closeMenu() {
-  dropdownList.classList.remove('active')
-  dropdownArrow.style.transform = 'rotate(-180deg)';
+  dropdownList.classList.remove('active');
+  dropdownArrow.style.transform = 'rotate(0deg)';
 }
 
 dropdownItems.forEach(item => {
   item.addEventListener('click', function() {
-    dropdownText.textContent = item.textContent
-    closeMenu()
+    dropdownText.textContent = item.textContent;
+    closeMenu();
   })
 })
 
