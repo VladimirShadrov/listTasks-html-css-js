@@ -5,7 +5,6 @@ form.addEventListener('submit', function (event) {
   if (isValid()) {
     newTask = {
       id: Math.random(),
-      completed: false,
       title: form['name-task'].value,
       body: form['task-description'].value
     }

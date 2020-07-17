@@ -10,7 +10,7 @@
 
 .create-task-form {
   max-width: 600px;
-  border: 1px solid rgba(85, 85, 85, 0.5);
+  border: 1px solid rgba(55, 55, 55, 0.7);
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.5);
   margin: 0 auto;
@@ -53,6 +53,10 @@
   font-size: 16px;
   box-shadow: 0px 2px 10px 1px rgba(22, 23, 24, 0.7);
   transition: 0.2s;
+}
+
+.create-task-submit:hover {
+  background-color: #1500ff;
 }
 
 .create-task-submit:active {
